@@ -7,8 +7,6 @@ public class TestForCartClass extends BeforeAfter {
 
     @Test
     void scenarioGetCartName() {
-
         assertEquals("new-cart", newCart.getCartName());
-
     }
 }
