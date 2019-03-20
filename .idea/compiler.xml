@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="eborisik.tests.TaskForInterviewWithEBorisik.main" target="1.8" />
+      <module name="eborisik.tests.TaskForInterviewWithEBorisik.test" target="1.8" />
+      <module name="touchnet.tests.TaskForInterviewWithEBorisik.main" target="1.8" />
+      <module name="touchnet.tests.TaskForInterviewWithEBorisik.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
