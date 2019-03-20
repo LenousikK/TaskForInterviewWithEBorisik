@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group 'touchnet.tests'
+group 'eborisik.tests'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
@@ -14,7 +14,6 @@ repositories {
 dependencies {
     compile 'org.junit.jupiter:junit-jupiter-api:5.0.0-M4'
     compile 'com.google.code.gson:gson:2.8.5'
-    compile("org.seleniumhq.selenium:selenium-java:3.141.59")
     compile group: 'io.github.pityka', name: 'fileutils_2.12', version: '1.2.2'
     compile group: 'org.junit.jupiter', name: 'junit-jupiter-params', version: '5.0.0-M4'
 }
