@@ -1,14 +1,22 @@
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
 import java.io.File;
 
+import parser.JsonParser;
 import parser.NoSuchFileException;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-public class TestForJsonParserClassReadFrom extends BeforeAfter {
+public class TestForJsonParserClassReadFrom {
+    JsonParser parser = null;
+
+    @BeforeEach
+    public void createJsonParser() {
+        parser = new JsonParser();
+    }
 
     @ParameterizedTest
     @ValueSource(strings = {"abc1", "abc2", "abc3", "abc4", "abc5"})
@@ -19,6 +27,4 @@ public class TestForJsonParserClassReadFrom extends BeforeAfter {
         System.out.println(exception.getMessage());
         assertEquals(String.format("File src\\main\\resources\\%s.json not found!", resourcesFolderPath), exception.getMessage());
     }
-
-
 }
